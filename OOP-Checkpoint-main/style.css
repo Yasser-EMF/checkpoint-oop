@@ -1,0 +1,84 @@
+/* General Container Styles */
+.container {
+    max-width: 600px;
+    margin: 20px auto; /* Center the container */
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+h1, h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Individual Item Styles */
+.item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    border-bottom: 1px solid #eee;
+}
+
+.name, .price {
+    flex: 1; /* Allow them to grow and take available space */
+    margin-right: 10px;
+}
+
+.quantity {
+    display: flex;
+    align-items: center;
+}
+
+/* Button Styles */
+.btn {
+    background-color: #007bff; /* Primary color */
+    color: white;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Smooth color transition on hover */
+}
+
+.btn:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+}
+
+.minus, .plus {
+    font-size: 18px;
+}
+
+.delete-btn {
+    background-color: #dc3545; /* Red for delete */
+    margin-left: 10px;
+}
+
+/* Heart Icon Styles (Font Awesome) */
+.like-btn {
+    color: #ccc; /* Gray for unliked */
+    font-size: 20px;
+    margin-left: 10px;
+    cursor: pointer;
+    transition: color 0.3s; /* Smooth color transition */
+}
+
+.like-btn.liked {
+    color: #ff0000; /* Red for liked */
+}
+
+/* Total Price Display */
+#total {
+    text-align: right;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+/* Favorite Items Styles */
+#favorite-items {
+    margin-top: 20px;
+    padding: 15px;
+    border-top: 1px solid #ddd;
+}
